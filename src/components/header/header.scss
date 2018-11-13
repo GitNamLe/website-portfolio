@@ -1,0 +1,144 @@
+
+.top-nav {
+    height: 50px;
+    background-color: #0B0C10;
+  }
+  
+.head {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+  
+.red-desc {
+  color: #66FCF1;
+}
+.content-nav {
+  position: absolute;
+  width: 100%;
+  background-color: #1f2833;
+  top: 0;
+  right:0;
+}
+
+.content-nav ul {
+  display: flex;
+  float: right;
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.content-nav button {background-color: #1f2833;}
+.content-nav button:before, 
+.content-nav button:after
+{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.content-nav button:before
+{
+  top: 2px;
+  transform: translateY(10px);
+}
+.content-nav button:after
+{
+  bottom: 2px;
+  transform: translateY(-10px);
+}
+
+.content-nav button:hover:before,
+.content-nav button:hover:after
+{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+.line-1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  top: 20%;  
+  width: 0;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 3vw;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-box-sizing:content-box;
+  box-sizing:content-box;
+}
+
+/* Animation */
+.anim-typewriter-line1{
+  width:0;
+}
+.anim-typewriter-line2{
+  width:0;
+  opacity: 0;
+}
+  
+.header-greyspace {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-color: #0B0C10;
+}
+
+.middle-greyspace {
+  position: absolute;
+  margin-top: 1300px;
+  height: 700px;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 1600px 20%, 1600px 100%, 0 80%);
+  clip-path: polygon(0 0, 1600px 20%, 1600px 100%, 0 80%);
+  background-color: #0B0C10;
+}
+
+.portrait {
+    position: absolute;
+    width: 200px;
+    top: 220px;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 50%;
+}
+
+
+.icon-border {
+  border: 1px #66FCF1 solid;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  transition: .75s;
+  &:hover {
+    background-color: #66FCF1;
+  }
+}
+.icon-soup {
+  display: flex;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  margin-left: -85.5px; 
+}
+.mdi-header {
+  position: relative;
+  left: 50%;
+  width: 30px;
+  top: 4px;
+  color: whitesmoke;
+  margin-left: -15px;
+  font-size: 30px;
+}

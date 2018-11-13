@@ -1,0 +1,157 @@
+.projects {
+    h1 {
+        color: #5E95E8;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        position: relative;
+        opacity: 0;
+    }
+    margin-top: 900px;
+}
+
+.mdi-projects {
+    color: yellow;
+    font-size: 40px;
+    bottom: -50px;    
+}
+
+.prize-desc {
+    position: absolute;
+    bottom: -50px; 
+    display: flex;
+
+    p {
+        padding-left: 5px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+    }
+}
+
+.title-proj {
+    left: -200px;
+    animation: projectTitleShift .75s forwards;
+}
+
+.just-a-dash {
+    position: relative;
+    width: 75px;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 10%;
+}
+
+@keyframes h2-anim {
+    100% {
+        transition: .50s;
+        opacity: 1;
+        margin-top: 30px;
+    }
+}
+
+.hover-me {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    &:hover {
+        background-color: #0B0C10;
+    }
+}
+
+.on-hover-project1 {
+    transition: .5s;
+    position: relative;
+    h2 {
+        animation: h2-anim .5s forwards;
+    }
+    
+}
+
+#projects {
+    transition: 2s;
+    &:hover {
+        opacity: 0.3; 
+        /* filter: blur(8px);
+        -webkit-filter: blur(8px); */
+    }
+
+}
+
+@keyframes projectDrop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes projectTitleShift {
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.project-list {
+    position: absolute;
+    display: flex;
+    width: min-content;
+    margin-left: -480px;
+    left: 50%;
+
+    h2 {
+        opacity: 0;
+        color: white;
+        margin: 0 auto;
+        width: min-content;
+    }
+
+    div:nth-child(1) {
+        animation: projectDrop .75s .50s forwards;
+    }
+    div:nth-child(2) {
+        animation: projectDrop .75s .75s forwards;
+    }    
+    div:nth-child(3) {
+        animation: projectDrop .75s 1s forwards;
+    }
+}
+
+.blocks {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 5%;
+    margin-right: 20px;
+    transition: .25s;
+    margin-top: -200px;
+    opacity: 0;
+    &:hover {
+        background-color: whitesmoke;
+    }
+}
+
+.project-list-mobile {
+    position: absolute;
+    width: min-content;
+    margin-left: -150px;
+    left: 50%;
+}
+
+.blocks-mobile {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 5%;
+    margin-top: 20px;
+    transition: .25s;
+    &:hover {
+        background-color: whitesmoke;
+    }
+}
