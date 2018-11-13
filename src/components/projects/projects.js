@@ -44,20 +44,23 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="projects">
+      <div className="projects-component">
         <h1 id="title-proj">Projects & Prizes</h1>
         <div className="just-a-dash"/>
         <div id="project-list">
-          <div style={{backgroundImage: `url("${HandyCam}")`}} id="projects" className="item1">
-            <div id="on-hover-project1">
+          <div id="projects" className="item1">
+            <div className="handy-cam child" id="on-hover-project1">
+              <span>HandyCam</span>
             </div>
           </div>
-          <div style={{backgroundImage: `url("${PharmAlarm}")`}} id="projects" className="item2">
-            <div className="on-hover-project2" id="on-hover-project2">
+          <div id="projects" className="item2">
+            <div className="pharm-alarm child" id="on-hover-project2">
+              <span>PharmAlarm</span>
             </div>
           </div>
-          <div style={{backgroundImage: `url("${ChefHappy}")`}} id="projects" className="item3">
-            <div className="on-hover-project3" id="on-hover-project3">
+          <div id="projects" className="item3">
+            <div className="chef-happy child" id="on-hover-project3">
+              <span>ChefHappy</span>
             </div>
           </div>
         </div>

@@ -1,4 +1,6 @@
-.projects {
+.projects-component {
+    margin-top: 900px;
+
     h1 {
         color: #5E95E8;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,10 +8,94 @@
         margin: 0 auto;
         margin-bottom: 50px;
         position: relative;
+        opacity: 1;
+    }
+
+    span {
+        color: white;
+        font-family: sans-serif;
+        margin: 0 auto;
+        top: 100px;
+        position: relative;
         opacity: 0;
     }
-    margin-top: 900px;
+
+
+    .project-list {
+        display: -webkit-inline-box;
+        position: relative;
+        margin: 0 auto;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        display: -webkit-box;
+    }
+    
+    .project-list-mobile {
+        position: relative;
+        margin: 0 auto;
+        display: table;
+    }
+    
+
+
+
+    .child {
+        width: 100%;
+        height: 100%;
+        background-color: black; /* fallback color */
+        background-position: center;
+        background-size: cover;
+        border-radius: 5%;
+        transition: all .5s;
+        text-align: center;
+    }
+
+    .child:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(52,73,94,0.75);
+    }
+
+    #projects {
+        height: 300px;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 5%;
+        margin: 5px;
+    }
+    
+    #projects:hover .child,
+    #projects:focus .child {
+      transform: scale(1.2);
+    }
+    #projects:hover .child:before,
+    #projects:focus .child:before {
+        display: block;
+    }
+    #projects:hover span,
+    #projects:focus span {
+        opacity: 1;
+        display: block;
+    }
+
+    .handy-cam {
+        background-image: url("../../handy-cam.png");
+    }
+    .pharm-alarm {
+        background-image: url("../../pharm-alarm-logo.png");
+    }
+    .chef-happy {
+        background-image: url("../../chef-happy.png");
+    }
+
+
 }
+
 
 .mdi-projects {
     color: yellow;
@@ -30,10 +116,6 @@
     }
 }
 
-.title-proj {
-    left: -200px;
-    animation: projectTitleShift .75s forwards;
-}
 
 .just-a-dash {
     position: relative;
@@ -43,115 +125,4 @@
     margin: 0 auto;
     margin-bottom: 25px;
     border-radius: 10%;
-}
-
-@keyframes h2-anim {
-    100% {
-        transition: .50s;
-        opacity: 1;
-        margin-top: 30px;
-    }
-}
-
-.hover-me {
-    width: 100%;
-    height: 100%;
-    transition: .5s;
-    &:hover {
-        background-color: #0B0C10;
-    }
-}
-
-.on-hover-project1 {
-    transition: .5s;
-    position: relative;
-    h2 {
-        animation: h2-anim .5s forwards;
-    }
-    
-}
-
-#projects {
-    transition: 2s;
-    &:hover {
-        opacity: 0.3; 
-        /* filter: blur(8px);
-        -webkit-filter: blur(8px); */
-    }
-
-}
-
-@keyframes projectDrop {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        margin-top: 0;
-    }
-}
-
-@keyframes projectTitleShift {
-    100% {
-        opacity: 1;
-        left: 0;
-    }
-}
-
-.project-list {
-    position: absolute;
-    display: flex;
-    width: min-content;
-    margin-left: -480px;
-    left: 50%;
-
-    h2 {
-        opacity: 0;
-        color: white;
-        margin: 0 auto;
-        width: min-content;
-    }
-
-    div:nth-child(1) {
-        animation: projectDrop .75s .50s forwards;
-    }
-    div:nth-child(2) {
-        animation: projectDrop .75s .75s forwards;
-    }    
-    div:nth-child(3) {
-        animation: projectDrop .75s 1s forwards;
-    }
-}
-
-.blocks {
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-    border-radius: 5%;
-    margin-right: 20px;
-    transition: .25s;
-    margin-top: -200px;
-    opacity: 0;
-    &:hover {
-        background-color: whitesmoke;
-    }
-}
-
-.project-list-mobile {
-    position: absolute;
-    width: min-content;
-    margin-left: -150px;
-    left: 50%;
-}
-
-.blocks-mobile {
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-    border-radius: 5%;
-    margin-top: 20px;
-    transition: .25s;
-    &:hover {
-        background-color: whitesmoke;
-    }
 }
