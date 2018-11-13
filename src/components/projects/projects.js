@@ -50,30 +50,14 @@ class Projects extends Component {
         <div id="project-list">
           <div style={{backgroundImage: `url("${HandyCam}")`}} id="projects" className="item1">
             <div id="on-hover-project1">
-              <h2>HandyCam</h2>
-              <ViewDemoButton fade="fade">View Demo</ViewDemoButton>
-            </div>
-            <div className="hover-me"></div>
-            <div className="prize-desc">
-              <i className="mdi-projects mdi mdi-trophy"></i><p>Best Use Of Giphy | HackNY Spring 2018</p>
             </div>
           </div>
           <div style={{backgroundImage: `url("${PharmAlarm}")`}} id="projects" className="item2">
             <div className="on-hover-project2" id="on-hover-project2">
-              <h2>HandyCam</h2>
-              <ViewDemoButton fade="fade">View Demo</ViewDemoButton>
-            </div>
-            <div className="prize-desc">
-              <i className="mdi-projects mdi mdi-trophy"></i><p>Best Social Good Hack | HackNY Fall 2018</p>
             </div>
           </div>
           <div style={{backgroundImage: `url("${ChefHappy}")`}} id="projects" className="item3">
             <div className="on-hover-project3" id="on-hover-project3">
-              <h2>HandyCam</h2>
-              <ViewDemoButton fade="fade">View Demo</ViewDemoButton>
-            </div>
-            <div className="prize-desc">
-              <i className="mdi-projects mdi mdi-trophy"></i><p>Best Use Of Technology | HackRU Spring 2018</p>
             </div>
           </div>
         </div>
