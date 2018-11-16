@@ -16,23 +16,27 @@ self.__precacheManifest = [
     "url": "/website-portfolio/static/media/chef-happy.8fe48f25.png"
   },
   {
+    "revision": "001cdf7448ca4f415c5edaefc0fe87e9",
+    "url": "/website-portfolio/static/media/Nam Le Resume.001cdf74.pdf"
+  },
+  {
     "revision": "3a5481507d16cd67b158",
     "url": "/website-portfolio/static/js/runtime~main.3a548150.js"
   },
   {
-    "revision": "1b521c6f2fa9db9c0686",
-    "url": "/website-portfolio/static/js/main.1b521c6f.chunk.js"
+    "revision": "3482dfc4ac1ae6aee01a",
+    "url": "/website-portfolio/static/js/main.3482dfc4.chunk.js"
   },
   {
-    "revision": "e1df5dec6db4e1284ea3",
-    "url": "/website-portfolio/static/js/1.e1df5dec.chunk.js"
+    "revision": "1d594c2292a7e52a19fd",
+    "url": "/website-portfolio/static/js/1.1d594c22.chunk.js"
   },
   {
-    "revision": "1b521c6f2fa9db9c0686",
-    "url": "/website-portfolio/static/css/main.1c0df66f.chunk.css"
+    "revision": "3482dfc4ac1ae6aee01a",
+    "url": "/website-portfolio/static/css/main.66a41497.chunk.css"
   },
   {
-    "revision": "f3f96f17602a73513426199b45da572f",
+    "revision": "727282e7cd11c81992e6c748b32521ac",
     "url": "/website-portfolio/index.html"
   }
 ];
