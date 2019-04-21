@@ -22,11 +22,9 @@ const BasicFadeButton = styled.button`
 const BasicFadeA = styled.a`
 color: #fff;
 cursor: pointer;
-font-size: 16px;
-border-radius: 290486px;
+font-size: 20px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-padding: 20px 80px;
-font-weight: 400;
+padding: 10px 60px;
 line-height: 45px;
 margin: 0 0 2em;
 position: relative;
@@ -52,31 +50,17 @@ const TextFadeButton = BasicFadeButton.extend`
     }`;
 
 const FadeButton = BasicFadeA.extend`
-  background: ${props =>
-    Mix('#5E95E8')
-      .lighten(0.1)
-      .string()};
-  border: 1px solid
+  background: transparent;
+  border: 2px solid
     ${props =>
-      Mix('#5E95E8')
+      Mix('#45A29E')
         .darken(0.04)
         .string()};
-  box-shadow: 0px 1px 0
-      ${props =>
-        Mix('#5E95E8')
-          .darken(0.05)
-          .string()},
-    2px 4px 6px
-      ${props =>
-        Mix('#5E95E8')
-          .darken(0.02)
-          .string()};
-  font-weight: 900;
   letter-spacing: 1px;
   transition: all 150ms linear;
   &:hover {
     color: ${props => props.fade === 'fade' ? '	#0e1111' : '#fff'}
-    background: ${ props => props.fade === 'fade' ? 'transparent' : Mix('#5E95E8').darken(0.15).string()};
+    background: ${ props => props.fade === 'fade' ? 'transparent' : Mix('#45A29E').darken(0.15).string()};
     text-decoration: none;
     transition: all 250ms linear;
   }`;

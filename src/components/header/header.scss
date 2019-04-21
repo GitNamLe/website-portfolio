@@ -1,9 +1,57 @@
+.header-component {
+  button {
+    transition: .25s;
+  }
 
+button:focus{
+  outline: none;
+}
+
+  .icon-border {
+    border: 1px #66FCF1 solid;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    transition: .75s;
+    &:hover {
+      background-color: #66FCF1;
+    }
+  }
+  .mdi-header {
+    position: relative;
+    left: 50%;
+    width: 30px;
+    top: 4px;
+    color: whitesmoke;
+    margin-left: -15px;
+    font-size: 30px;
+  }
+}
 .top-nav {
     height: 50px;
     background-color: #0B0C10;
+}
+
+.active {
+  color: #45A29E !important;
+}
+
+@keyframes drop-down-nav {
+  100% {
+    margin-top: 0;
   }
+}
   
+.fixed-nav {
+  position: fixed !important;
+  margin-top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: drop-down-nav .5s forwards;
+}
+
 .head {
   height: 500px;
   width: 100%;
@@ -16,6 +64,7 @@
 }
 .content-nav {
   position: absolute;
+  z-index: 1;
   width: 100%;
   background-color: #1f2833;
   top: 0;
@@ -26,9 +75,12 @@
   display: flex;
   float: right;
   padding: 0;
-  margin-bottom: 0;
+  margin: 0;
+  z-index: 1;
   list-style: none;
 }
+
+
 .content-nav button {background-color: #1f2833;}
 .content-nav button:before, 
 .content-nav button:after
@@ -99,15 +151,15 @@
   margin-top: 1300px;
   height: 700px;
   width: 100%;
-  -webkit-clip-path: polygon(0 0, 1600px 20%, 1600px 100%, 0 80%);
-  clip-path: polygon(0 0, 1600px 20%, 1600px 100%, 0 80%);
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
   background-color: #0B0C10;
 }
 
 .portrait {
-    position: absolute;
+    position: relative;
     width: 200px;
-    top: 220px;
+    top: 190px;
     left: 50%;
     margin-left: -100px;
     border-radius: 50%;
@@ -128,8 +180,8 @@
 }
 .icon-soup {
   display: flex;
-  position: absolute;
-  top: 450px;
+  position: relative;
+  top: 200px;
   left: 50%;
   margin-left: -85.5px; 
 }
@@ -141,4 +193,8 @@
   color: whitesmoke;
   margin-left: -15px;
   font-size: 30px;
+}
+
+.header-about {
+  top: 30vw;
 }

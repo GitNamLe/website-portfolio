@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './components/header/header'; 
 import About from './components/about/about';
 import Projects from './components/projects/projects';
-import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 
 class App extends Component {
@@ -17,7 +16,6 @@ class App extends Component {
         <Header />
         <About />
         <Projects />
-        <Contact />
         <Footer />
       </div>
     );

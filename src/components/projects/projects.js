@@ -34,11 +34,6 @@ class Projects extends Component {
           $("#project-list").children('#projects').removeClass( "blocks-mobile" ).addClass( "blocks" );
         }
       })
-    $('.item1').hover(() => {
-        $('#on-hover-project1').addClass('on-hover-project1')
-      }, () => {
-        $('#on-hover-project1').removeClass('on-hover-project1')
-      }) 
 }
 
 
@@ -49,18 +44,27 @@ class Projects extends Component {
         <div className="just-a-dash"/>
         <div id="project-list">
           <div id="projects" className="item1">
-            <div className="handy-cam child" id="on-hover-project1">
-              <span>HandyCam</span>
+            <div className="handy-cam child margin-top-handyCam" id="on-hover-project1">
+              <span>
+                <h3>HandyCam</h3>
+                <FadeButton href="https://devpost.com/software/handycam" target="_blank" className="demo-btn">DEMO</FadeButton>
+              </span>
             </div>
           </div>
           <div id="projects" className="item2">
             <div className="pharm-alarm child" id="on-hover-project2">
-              <span>PharmAlarm</span>
+              <span>
+                <h3>PharmAlarm</h3>
+                <FadeButton href="https://devpost.com/software/pharmalarm-osp7ju" target="_blank" className="demo-btn">DEMO</FadeButton>
+              </span>
             </div>
           </div>
           <div id="projects" className="item3">
             <div className="chef-happy child" id="on-hover-project3">
-              <span>ChefHappy</span>
+              <span>
+              <h3>ChefHappy</h3>
+              <FadeButton href="https://devpost.com/software/chef-happy" target="_blank" className="demo-btn">DEMO</FadeButton>
+              </span>
             </div>
           </div>
         </div>
