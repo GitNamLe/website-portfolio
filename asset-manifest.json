@@ -1,7 +1,7 @@
 {
   "main.css": "/website-portfolio/static/css/main.5494be19.chunk.css",
-  "main.js": "/website-portfolio/static/js/main.ee2843bf.chunk.js",
-  "main.js.map": "/website-portfolio/static/js/main.ee2843bf.chunk.js.map",
+  "main.js": "/website-portfolio/static/js/main.543a6d45.chunk.js",
+  "main.js.map": "/website-portfolio/static/js/main.543a6d45.chunk.js.map",
   "static/js/1.1d594c22.chunk.js": "/website-portfolio/static/js/1.1d594c22.chunk.js",
   "static/js/1.1d594c22.chunk.js.map": "/website-portfolio/static/js/1.1d594c22.chunk.js.map",
   "runtime~main.js": "/website-portfolio/static/js/runtime~main.3a548150.js",
@@ -10,9 +10,9 @@
   "static/media/handy-cam.png": "/website-portfolio/static/media/handy-cam.43b77fcd.png",
   "static/media/pharm-alarm-logo.png": "/website-portfolio/static/media/pharm-alarm-logo.50f86f6b.png",
   "static/media/chef-happy.png": "/website-portfolio/static/media/chef-happy.8fe48f25.png",
-  "static/media/namle.pdf": "/website-portfolio/static/media/namle.2fae5650.pdf",
+  "static/media/namle.pdf": "/website-portfolio/static/media/namle.0e3a0bd8.pdf",
   "static/css/main.5494be19.chunk.css.map": "/website-portfolio/static/css/main.5494be19.chunk.css.map",
   "index.html": "/website-portfolio/index.html",
-  "precache-manifest.ad78ff0ba67d12a95843ffabd28a15e9.js": "/website-portfolio/precache-manifest.ad78ff0ba67d12a95843ffabd28a15e9.js",
+  "precache-manifest.e6eb583d12fcc39fb48e29c4a714b5ea.js": "/website-portfolio/precache-manifest.e6eb583d12fcc39fb48e29c4a714b5ea.js",
   "service-worker.js": "/website-portfolio/service-worker.js"
 }
